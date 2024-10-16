@@ -1,0 +1,27 @@
+### Testar a raiz do projeto
+GET  http://localhost:5136
+
+### Listar todas as tarefas
+GET  http://localhost:5136/api/tarefas/listar
+
+### Cadastrar tarefa
+POST http://localhost:5136/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Estudar para a prova"
+}
+
+### Buscar tarefas pelo id
+GET  http://localhost:5136/api/tarefas/buscar/10
+
+### remover tarefas pelo id
+DELETE  http://localhost:5136/api/tarefas/deletar/3
+
+### Alterar pelo id
+PUT http://localhost:5136/api/tarefas/alterar/1
+Content-Type: application/json
+
+{
+    "nome" : "lembrar que apartir de semana que vem tem aula com prova"
+}
